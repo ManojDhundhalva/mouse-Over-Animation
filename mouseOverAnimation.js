@@ -67,7 +67,7 @@ function Circle(x, y, dx, dy, radius, color) {
     this.draw = function () {
         context.beginPath();
         context.arc(this.x, this.y, this.radius, 0, 2 * Math.PI, false);
-        context.stroke();
+        // context.stroke();
         context.fillStyle = color;
         context.fill();
     }
