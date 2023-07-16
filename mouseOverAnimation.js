@@ -97,7 +97,7 @@ function Circle(x, y, dx, dy, radius, color) {
 
 let circleArray = [];
 
-for (let i = 0; i < 1000; i++) {
+for (let i = 0; i < 1100; i++) {
 
     let radius = Math.floor(Math.random() * 80) + 1;
     if (radius < 50) {
@@ -106,7 +106,7 @@ for (let i = 0; i < 1000; i++) {
     let Color = colorArray[Math.floor(Math.random() * colorArray.length)];
     let x = Math.floor(Math.random() * (window.innerWidth - 2 * radius)) + radius;
     let y = Math.floor(Math.random() * (window.innerHeight - 2 * radius)) + radius;
-    let dx = Math.floor((Math.random() - 0.5) * 6);
+    let dx = Math.floor((Math.random() - 0.5) * 4.5);
     if (dx == 0) {
         dx += 1;
     }
@@ -116,7 +116,7 @@ for (let i = 0; i < 1000; i++) {
     // if (dx >= 0 && dx <= 2) {
     // dx += 1;
     // }
-    let dy = Math.floor((Math.random() - 0.5) * 6);
+    let dy = Math.floor((Math.random() - 0.5) * 4.5);
     if (dy == 0) {
         dy += 1;
     }
